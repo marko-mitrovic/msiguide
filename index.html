@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.v7.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="canonical" href="https://gigatron.rs/novosti/detaljan-vodic-za-sklapanje-racunara-za-pocetnike-12722">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://img.gigatron.rs/m.html/static/frameresize.js"></script>
+  <script src="js/main.v2.js" async></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <title>Detaljan vodič za sklapanje računara, za početnike</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="black-bar">
+      <img src="./images/nav-icon.png" onclick="myFunction()" alt="" class="dropbtn">
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="col-3">
+        <a onclick="navFirst()"><img src="./images/icon-nav-1.png" alt="" class="icon-nav margin-in-1"></a>
+        <a onclick="navFirst()">Upoznavanje sa PC komponentama</a>
+      </div>
+      <div class="col-3">
+        <a onclick="navSecond()"><img src="./images/icon-nav-2.png" alt="" class="icon-nav"></a>
+        <a onclick="navSecond()">Kako da sklopite računar</a>
+      </div>
+      <div class="col-3">
+        <a onclick="navThird()"><img src="./images/icon-nav-3.png" alt="" class="icon-nav"></a>
+        <a onclick="navThird()">Isplanirajte svoj PC</a>
+      </div>
+      <div class="col-3">
+        <a onclick="navFourth()"><img src="./images/icon-nav-4.png" alt="" class="icon-nav"></a>
+        <a onclick="navFourth()">Pitanja i odgovori</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <div class="dropdown">
+      <div id="myDropdown" class="dropdown-content">
+        <a onclick="navFirst()">Upoznavanje sa PC komponentama</a>
+        <a onclick="navSecond()">Kako da sklopite računar</a>
+        <a onclick="navThird()">Isplanirajte svoj PC</a>
+        <a class="last" onclick="navFourth()">Pitanja i odgovori</a>
+      </div>
+    </div>
+
+    <div class="group-title">
+      <img src="./images/gigatron-logo.png" alt="" class="brand-logo-1 margin-1">
+      <img src="./images/msi-logo.png" alt="" class="brand-logo-2 margin-2">
+      <h2 class="title margin-3"><span class="dash">- </span><span class="title-white">#Sklopi</span>SvojKomp <span
+          class="dash">-</span></h2>
+      <h3 class="subtitle">kompletan vodič za sklapanje računara, namenjen početnicima</h3>
+      <div class="group-button">
+        <a onclick="navSecond()"><button class="button button1">naučite da sklopite računar<div class="triangle-right">
+            </div></button></a>
+      </div>
+    </div>
+
+    <div class="bg-1"></div>
+
+    <div class="group-title-2">
+      <h2 class="title-2"><span class="dash">- </span>ZAŠTO BISTE SAMI SKLOPILI RAČUNAR?<span class="dash"> -</span>
+      </h2>
+      <p class="text-large margin-4">Zato što možete da izaberete komponente koje želite i koje će savršeno odgovarati
+        vašim potrebama.<br>Zato što možete bolje da rasporedite budžet.<br>Zato što ćete u budućnosti moći lakše da
+        nadogradite i održavate svoj računar.<br>I na kraju…</p>
+      <h4 class="subtitle-large">Totalno je super osećaj kada sami sklopite računar!</h4>
+    </div>
+
+    <div class="bg-2"></div>
+
+    <div class="group-title-start">
+      <h2 class="title-2 margin-5"><span class="dash">- </span>UVOD U PC KOMPONENTE<span class="dash"> -</span></h2>
+      <h5 class="text-sb margin-6">Šta vam je sve potrebno da biste sastavili računar?</h5>
+      <p class="text">Sastavljanje računara je podjednako zabavno kao i slaganje Lego kocaka. Međutim, pre nego što
+        sastavite svoju borbenu ili radnu mašinu, potrebno je da se upoznate sa njenim delovima. Iako se desktop
+        računari međusobno mogu razlikovati po nameni i stilu, određeni delovi su
+        zajednički za svaki računar jer bez tih delova računar ne bi mogao da funkcioniše. Upoznajte osnovne delove
+        desktop računara.</p>
+    </div>
+
+    <div id="navFirst" class="bg-3"></div>
+
+    <div class="bg-black">
+
+      <div class="col-table">
+        <div class="col-6">
+          <img src="./images/pc_0.png" alt="" class="pc_0" id="pcImage">
+        </div>
+        <div class="col-6">
+          <table>
+            <tr>
+              <td class="td-table-1" onmouseover="changePart1()" onmouseout="removeImage()">
+                <img src="./images/table-image-1.png" alt="" class="table-image" id="tableImageOne">
+                <p class="text-small">Procesor</p>
+              </td>
+              <td class="td-table-1" onmouseover="changePart2()" onmouseout="removeImage()">
+                <img src="./images/table-image-2.png" alt="" class="table-image" id="myBtn2">
+                <p class="text-small">Hladnjak<span class="table-br-mobile"><br></span> procesora</p>
+              </td>
+              <td class="td-table-1" onmouseover="changePart3()" onmouseout="removeImage()">
+                <img src="./images/table-image-3.png" alt="" class="table-image">
+                <p class="text-small">Matična ploča</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-table-1" onmouseover="changePart4()" onmouseout="removeImage()">
+                <img src="./images/table-image-4.png" alt="" class="table-image-4">
+                <p class="text-small">Memorija</p>
+              </td>
+              <td class="td-table-1" onmouseover="changePart5()" onmouseout="removeImage()">
+                <img src="./images/table-image-5.png" alt="" class="table-image-5">
+                <p class="text-small">Grafička<span class="table-br-mobile"><br></span> kartica</p>
+              </td>
+              <td class="td-table-1" onmouseover="changePart6()" onmouseout="removeImage()">
+                <img src="./images/table-image-6.png" alt="" class="table-image">
+                <p class="text-small">Hard disk</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-table-1" onmouseover="changePart7()" onmouseout="removeImage()">
+                <img src="./images/table-image-7.png" alt="" class="table-image">
+                <p class="text-small">Napajanje</p>
+              </td>
+              <td class="td-table-1" onmouseover="changePart8()" onmouseout="removeImage()">
+                <img src="./images/table-image-8.png" alt="" class="table-image">
+                <p class="text-small">Kućište</p>
+              </td>
+              <td class="td-table-1" onmouseover="changePart9()" onmouseout="removeImage()">
+                <img src="./images/table-image-9.png" alt="" class="table-image">
+                <p class="text-small">Periferni<span class="table-br-mobile"><br></span> uređaji</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="group-title-4">
+      <h2 class="title-2 margin-7">BESPLATAN ELEKTRONSKI PRIRUČNIK!</h2>
+      <p class="text-m">Da li ste nekada poželeli da sastavite svoj PC?</p>
+      <p class="text-m">Preuzmite elektronski priručnik (na engleskom jeziku) koji će vam pomoći pri sklapanju računara.
+      </p>
+      <div class="group-button-2">
+        <a href="https://www.msi.com/Landing/how-to-build-a-pc-ebook" target="_blank"><button
+            class="button button2">preuzmite priručnik</button></a>
+      </div>
+    </div>
+
+    <div class="bg-texture">
+      <div class="bg-4"></div>
+    </div>
+
+    <div class="group-title-middle">
+      <h2 class="title-2 margin-5"><span class="dash">- </span>KAKO DA SKLOPITE RAČUNAR<span class="dash"> -</span></h2>
+      <h5 class="text-sb margin-6">Vodič za sastavljanje računara, u 11 koraka</h5>
+      <p class="text">Gigatron i kompanija MSI vam donose kompletan i detaljan vodič uz koji ćete lako i samostalno
+        sastaviti svoj PC. Ne brinite, uz ovaj praktični video-vodič će čak i oni koji sklapaju svoj prvi računar moći
+        da sastave odličan PC! Zasucite rukave, zgrabite šrafciger, naoružajte se pozitivnom energijom i možemo da
+        počnemo.</p>
+    </div>
+
+    <div id="navSecond" class="bg-5"></div>
+
+
+
+    <div class="wrapper-select">
+
+
+
+      <div class="wrapper-select-in">
+
+        <select id="mySelect" onchange="changeOption()">
+          <option value="0">Korak 0: Priprema</option>
+          <option value="1">Korak 1: Instalacija procesora</option>
+          <option value="2">Korak 2: Instalacija memorije (DIMM)</option>
+          <option value="3">Korak 3: Instalacija M.2 SSD uređaja</option>
+          <option value="4">Korak 4: Instalacija hladnjaka procesora (kulera)</option>
+          <option value="5">Korak 5: Instalacija matične ploče</option>
+          <option value="6">Korak 6: Instalacija grafičke kartice</option>
+          <option value="7">Korak 7: Instalacija uređaja za skladištenje podataka</option>
+          <option value="8">Korak 8: Instalacija napajanja</option>
+          <option value="9">Korak 9: Povezivanje prednjeg panela</option>
+          <option value="10">Korak 10: Uređivanje kabova</option>
+          <option value="11">Korak 11: Instalacija operativnog sistema i drajvera</option>
+        </select>
+
+      </div>
+
+      <div id="block-1">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 0: Priprema</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/Mnox86XkFJw?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-red-select">Pre nego što počnete, pripremite sledeće:</p>
+              <p class="text-white-select">1. Krstasti šrafciger sa namagnetisanim vrhom;</p>
+              <p class="text-white-select">2. Plastične vezice (šelne) i makaze;</p>
+              <p class="text-white-select">3. Ravnu i čistu površinu koja nije elektroprovodna, na kojoj ćete raditi;
+              </p>
+              <p class="text-white-select">4. Duboko udahnite, pročitajte sva uputstva koja ste dobili uz komponente i
+                bićete spremni za rad.</p>
+              <p class="text-gray-select margin-8">Upozorenje:</p>
+              <p class="text-gray-select">Metalni pinovi (vrhovi / iglice) na poleđini matične
+                ploče su lako lomljivi. Nikada nemojte matičnu ploču stavljati direktno na tvrdu površinu kako ne biste
+                oštetili pinove.</p>
+              <img src="./images/s5_step0_01.png" alt="" class="img-step-0">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-2">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 1: Instalacija procesora</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/YQKBaw197Bw?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Otkopčajte poklopac na ležištu za procesor;</p>
+              <p class="text-white-select">2. Pažljivo postavite procesor u procesorsko ležište (soket), vodeći računa
+                da
+                se svi izrezi (ili druga obeležja za orijentaciju) na procesoru i procesorskom ležištu podudaraju;</p>
+              <p class="text-white-select">3. Uverite se da ste procesor ispravno postavili u procesorsko ležište i
+                nakon
+                toga ponovo zakopčajte poklopac procesorskog ležišta.</p>
+              <p class="text-gray-select margin-8">Upozorenje:</p>
+              <p class="text-gray-select">Budite pažljivi sa pinovima (iglicama) koji se nalaze na
+                donjoj strani procesora ili na procesorskom ležišu. Pinovi su izrađeni od zlata, koje je vrlo mek
+                materijal, pa se mogu veoma lako oštetiti. Čak i najmanja sila je dovoljna da se pinovi iskrive, što
+                može
+                uzrokovati probleme u radu procesora.</p>
+              <div class="group-image-select">
+                <img src="./images/s5_step1_01.png" alt="" class="img-step-1-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-3">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 2: Instalacija memorije (DIMM)</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/hq_F_VBRkqY?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Stisnite tj. oborite nadole osigurače (jezičke) koji se nalaze na
+                krajevima
+                ležišta za memoriju kako biste ležišta pripremili za instalaciju memorijskih modula;</p>
+              <p class="text-white-select">2. U uputstvu za vašu matičnu ploču pronađite informacije o redosledu
+                instalacije memorijskih modula. U slučaju da koristite samo jedan ili dva memorijska modula, odnosno
+                ukoliko nećete popuniti sva ležišta za memoriju, proverite koja ležišta je preporučeno da koristite;</p>
+              <p class="text-white-select">3. Ravno ubacite memorijski modul u ležište i stisnite ga nadole. Kada čujete
+                „klik“, odnosno kada se osigurači (jezičci) vrate u gornji položaj, to je znak da je memorijski modul
+                zaključan, čime je njegova instalacija završena.</p>
+              <p class="text-gray-select margin-8">Savet:</p>
+              <p class="text-gray-select">Preporučeni redosled instalacije memorijskih modula, tj. koje
+                ćete ležište prvo upotrebiti, zavisi od modela vaše matične ploče. Kod MSI matičnih ploča, na primer,
+                preručeno je da prvi memorijski modul instalirate u ležište sa oznakom DIMM1.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-4">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 3: Instalacija M.2 SSD uređaja</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/kCtA64loFuc?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Ukoliko je potrebno, vijak koji M.2 drajv odiže od matične ploče postavite
+                ili pomerite na odgovarajuću poziciju, u zavisnosti od dužine vašeg M.2 drajva, a zatim ga pričvrstite
+                zavrtanjem;</p>
+              <p class="text-white-select">2. Pod uglom od 45°, nežno ubacite svoj M.2 drajv u odgovarajući M.2 konektor
+                na matičnoj ploči;</p>
+              <p class="text-white-select">3. Pritisnite M.2 drajv nadole kako bi legao na vijak, a zatim ga fiksirajte
+                malim šrafom koji ste dobili uz svoju matičnu ploču.</p>
+              <p class="text-gray-select margin-8">Savet:</p>
+              <p class="text-gray-select">Pojedine matične ploče iz višeg segmenta poseduju specijalne
+                hladnjake za M.2 drajvove. Dodatni koraci instalacije su objašnjeni u uputstvu za vašu matičnu ploču.
+              </p>
+              <div class="group-image-select">
+                <img src="./images/s5_step3_00.png" alt="" class="img-step-3-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-5">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 4: Instalacija hladnjaka procesora (kulera)</h3>
+            <div class="video-container-space">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/3l5GIsjHb7U?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Ukoliko uz vaš procesorski hladnjak dolazi i takozvani back-plate držač,
+                montirajte ga na poleđinu matične ploče;</p>
+              <p class="text-white-select">2. Na površinu procesora nanesite malo termalne paste, u količini koja
+                odgovara
+                veličini jedne kapi;</p>
+              <p class="text-white-select">3. Hladnjak procesora poseduje ventilator. Priključite kabl ventilatora na
+                „CPU
+                Fan“ priključak na matičnoj ploči;</p>
+              <p class="text-white-select">4. Postavite hladnjak na procesor i zatim ga pričvrstite ravnomernim
+                zavijanjem
+                unakrsnih šrafova.</p>
+              <p class="text-gray-select margin-8">Upozorenje:</p>
+              <p class="text-gray-select">Važno je da dobro odmerite količinu termalne paste koju
+                ćete naneti na procesor. Premalo ili previše termalne paste će rezultovati lošim kontaktom i otežanim
+                prenosom toplote sa procesora na hladnjak, a postoji i mogućnost da se višak paste razlije po ležištu za
+                procesor. Uverite se da su šrafovi hladnjaka dobro zavijeni i da je pritisak koji hladnjak vrši na
+                procesor ujednačen na sve četiri strane. U suprotnom može doći do oštećenja procesora ili degradacije
+                rashladnih performansi.</p>
+              <img src="./images/s5_step4_01.png" alt="" class="img-step-4-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-6">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 5: Instalacija matične ploče</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/tibGzQVrtvg?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Instalirajte takozvani „I/O Shield“, tj. lim koji štiti spoljne priključke
+                na matičnoj ploči:</p>
+              <p class="text-white-select">2. Pod uglom od 45°, lagano spustite matičnu ploču u kućište;</p>
+              <p class="text-white-select">3. Poravnajte rupe za šrafove na matičnoj ploči sa rupama u kućištu;</p>
+              <p class="text-white-select">4. Pričvrstite matičnu ploču tako što ćete iskoristiti sve raspoložive rupe
+                za šrafove.</p>
+              <p class="text-gray-select margin-8">Savet:</p>
+              <p class="text-gray-select">Nemojte štedeti šrafove. Iskoristite sve raspoložive rupe za šrafove kako
+                biste dobro pričvrstili matičnu ploču i na taj način eliminisali mogućnost pomeranja matične ploče tokom
+                transporta ili rada kompjutera.</p>
+              <div class="group-image-select">
+                <img src="./images/s5_step5_01.png" alt="" class="img-step-5-1">
+                <img src="./images/s5_step5_02.png" alt="" class="img-step-5-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-7">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 6: Instalacija grafičke kartice</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/5PDsSrZ4mW0?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Uklonite takozvani „bracket“ tj. zaštitni lim sa PCI-e otvora na kućištu;
+              </p>
+              <p class="text-white-select">2. Otključajte PCI-e ležište na matičnoj ploči tako što ćete plastični
+                jezičak, koji se nalazi na zadnjem delu PCI-e ležišta, pritisnuti nadole;</p>
+              <p class="text-white-select">3. Držite grafičku karticu obema rukama, lagano je spustite u kućište i
+                postavite u PCI-e ležište na matičnoj ploči;</p>
+              <p class="text-white-select">4. Odgovarajućim šrafom pričvrstite grafičku karticu za zadnju stranu kućišta
+                kompjutera.</p>
+              <p class="text-gray-select margin-8">Upozorenje:</p>
+              <p class="text-gray-select">Grafičke kartice iz višeg segmenta mogu biti vrlo dugačke i / ili široke te
+                mogu zauzimati više prostora u kućištu. Pre kupovine kućišta proverite da li će u njemu biti dovoljno
+                mesta za vašu grafičku karticu.</p>
+              <img src="./images/s5_step6_01.png" alt="" class="img-step-6-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-8">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 7: Instalacija uređaja za skladištenje podataka</h3>
+            <div class="video-container-space">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/tk3ocp6PiXk?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Jedan kraj SATA kabla uključite u SATA priključak na matičnoj ploči, a
+                drugi kraj kabla uključite u uređaj za skladištenje podataka (hard disk ili SSD, veličine 2,5 ili 3,5
+                inča).</p>
+              <p class="text-gray-select margin-8">Upozorenje:</p>
+              <p class="text-gray-select">Uverite se da ste hard disk dobro pričvrstili za kućište, kako ne bi došlo do
+                oštećenja samog hard diska ili neke druge komponente.</p>
+              <img src="./images/s5_step7_01.png" alt="" class="img-step-7-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-9">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 8: Instalacija napajanja</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/zz_YZJAUOBg?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Montirajte napojnu jedinicu (PSU) u kućište i pričvrstite je tako što ćete
+                iskoristiti sve rupe predviđene za šrafove;</p>
+              <p class="text-white-select">2. Uključite 24-pinski konektor u odgovarajući priključak na matičnoj ploči;
+              </p>
+              <p class="text-white-select">3. Uključite 8-pinski konektor za napajanje procesora u odgovarajući
+                priključak na matičnoj ploči;</p>
+              <p class="text-white-select">4. Kabl na čijem se kraju nalazi PCIe konektor, sa 6+2 pina, uključite u
+                odgovarajući priključak na grafičkoj kartici. Imajte u vidu da neke grafičke kartice ne poseduju ovaj
+                priključak, dok se neke napajaju pomoću dva ovakva kabla, u zavisnosti od modela;</p>
+              <p class="text-white-select">5. Uključite naponski SATA konektor u naponski SATA priključak na vašem hard
+                disku;</p>
+              <p class="text-white-select">6. Ukoliko vaš računar poseduje optički uređaj ili druge dodatne uređaje,
+                obezbedite im dotok električne energije pomoću kablova na čijim se krajevima nalaze takozvani 4-pinski
+                Molex konektori.</p>
+              <p class="text-gray-select margin-8">Savet:</p>
+              <p class="text-gray-select">Veoma je važno da odaberete napajanje odgovarajuće snage. Postoje onlajn
+                kalkulatori za izračunavanje snage, uz pomoć kojih ćete lako izračunati koja je snaga potrebna
+                komponentama vašeg računara. Preporuka je da napajanje uvek bude za klasu jače u odnosu na realne
+                potrebe vašeg računara, kako biste osigurali da će vaše napajanje imati dovoljno snage i ukoliko u
+                budućnosti izvršite nadogradnju svog računara.</p>
+              <img src="./images/s5_step9_01.png" alt="" class="img-step-9-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-10">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 9: Povezivanje prednjeg panela</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/3myPkCtBJSU?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Povežite konektore sa oznakama Power Switch, Reset Switch, Power LED, HDD
+                LED na odgovarajući igličasti konektor (heder) na matičnoj ploči;</p>
+              <p class="text-white-select">2. Povežite kablove za prednje USB priključke na odgovarajuće igličaste USB
+                konektore (hedere) na matičnoj ploči:</p>
+              <p class="text-white-select">2.1. USB 3.0 kabl na USB 3.0 konektor, USB 2.0 kabl na USB 2.0 konektor;</p>
+              <p class="text-white-select">2.2. Prednji USB Type-C kabl na Front USB Type-C konektor;</p>
+              <p class="text-white-select">3. Povežite kabl za prednje audio priključke (slušalice i mikrofon) na
+                odgovarajući igličasti konektor na matičnoj ploči.</p>
+              <p class="text-gray-select margin-8">Savet:</p>
+              <p class="text-gray-select">Pre kupovine kućišta, proverite raspoloživi broj USB konektora na svojoj
+                matičnoj ploči, kako se ne bi dogodilo da neki USB priključci na kućištu ili matičnoj ploči ostanu van
+                funkcije. Verovatno želite sve da ih iskoristite, zar ne?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-11">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 10: Uređivanje kabova</h3>
+            <div class="video-container">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/-EOL20UvV7k?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Pomoću plastičnih vezica ili čičak-traka grupišite kablove i fiksirajte ih
+                za kućište računara.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-12">
+        <div class="col">
+          <div class="col-7">
+            <p class="title-tip">Odaberite željenu video-lekciju:</p>
+            <h3 class="subtitle-select">Korak 11: Instalacija operativnog sistema i drajvera</h3>
+            <div class="video-container-space">
+              <iframe id="youtube_player" class="yt_player_iframe" width="522" height="296"
+                src="https://www.youtube.com/embed/0PC1E6IfPWQ?enablejsapi=1" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="group-text-select">
+              <p class="text-white-select">1. Umetnite medijum za instalaciju operativnog sistema (CD/DVD ili USB fleš
+                memoriju);</p>
+              <p class="text-white-select">2. Pažljivo sledite korake za instalaciju operativnog sistema;</p>
+              <p class="text-white-select">3. Sa sajtova proizvođača vaših PC komponenti preuzmite i instalirajte
+                najnovije upravljačke programe (drajvere).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="bg6" class="bg-6"></div>
+
+
+
+    <div class="group-title-5">
+      <h3 class="title-5"><span class="dash">- </span>KAKO DA SASTAVITE NAJBOLJI PC ZA SVOJE POTREBE <span
+          class="dash">- </span></h3>
+      <p class="text">Jedna od prednosti samostalnog sastavljanja računara je to što svoj budući računar možete do
+        najsitnijih detalja prilagoditi svojim željama i potrebama. Bez obzira na to da li ćete na svom novom kompjuteru
+        igrati zahtevne igre ili ćete ga intenzivno koristiti za izradu multimedijalnog sadržaja, saveti koji slede će
+        vam pomoći da odaberete prave komponente za svoj PC.<br><br>U zavisnosti od toga da li sklapate Gaming PC,
+        Custom PC ili Streaming PC, kliknite na odgovarajuću ikonicu.</p>
+    </div>
+
+    <div class="group-circle">
+      <div class="group-circle-in">
+        <div id="myBtnFirst" class="circle-1 circle-general"></div></a>
+        <p class="text-circle">gaming pc</p>
+      </div>
+      <div class="group-circle-in">
+        <div id="myBtnSecond" class="circle-2 circle-general"></div>
+        <p class="text-circle">custom pc</p>
+      </div>
+      <div class="group-circle-in">
+        <div id="myBtnThird" class="circle-3 circle-general"></div>
+        <p class="text-circle">streaming pc</p>
+      </div>
+    </div>
+
+    <div id="myModalFirst" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeFirst">&times;</span>
+        <h3 class="title-modal-red">GAMING PC</h3>
+        <p class="text-modal">Jedna od najvećih prednosti koju gaming računar nudi tokom intenzivnih gaming sesija je
+          osećaj da ste potpuno ušli u igru, tj. da vas je igra sasvim okružila. U odnosu na kućne i kancelarijske
+          računare, gaming računari imaju znatno snažnije grafičke kartice i procesore, kao i bolji audio podsistem.
+          Gaming računari dolaze u različitim kategorijama, a njihovu hardversku konfiguraciju i potreban budžet
+          određuju igre koje želite da igrate, kao i željeni kvalitet grafike u igrama. U nastavku teksta ćemo vas
+          naučiti kako da sklopite svoj gaming kompjuter, daćemo vam korisne savete i predložiti praktične metode i web
+          sajtove.</p>
+        <h3 class="text-sb-modal">Šta treba da znate da biste sklopili gaming PC?</h3>
+        <div class="col-12">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Koju vrstu igara ćete igrati?</h3>
+              <p class="text-modal">Svaka igra ima drugačije zahteve, kada su u pitanju performanse i snaga računara. Na
+                primer, za igre iz MMORPG tabora su važne grafičke i audio performanse vašeg računara, dok igre iz FPS
+                žanra zahtevaju stabilnu i brzu vezu sa internetom. Pre nego što počnete da birate komponente za svoj
+                računar, posetite odgovarajuće web sajtove da biste saznali šta zahtevaju igre koje planirate da igrate,
+                kako biste odabrali prave komponente – ni previše slabe ni previše snažne.<br><br>Koristan link: <a
+                  class="modal-link-text" href="http://gamesystemrequirements.com/"
+                  target="_blank">http://gamesystemrequirements.com/</a></p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_ans02_img1.jpg" alt="">
+          </div>
+        </div>
+        <div class="group-modal">
+          <h3 class="title-modal-white">Izaberite odgovarajuću grafičku karticu</h3>
+          <p class="text-modal">Video-igre postaju sve zahtevnije u pogledu računarskih performansi, a grafičke kartice
+            su danas snažnije nego ikada ranije. Dobar izbor grafičke kartice je ključan faktor za dobar gaming PC.
+            Postoje dva brenda grafičkih kartica – NVIDIA i AMD. Naš savet je da brend (NVIDIA ili AMD) odaberete na
+            osnovu preporuka koje daju izdavači igara koje planirate da igrate. Što veći broj kadrova u sekundi (FPS –
+            Frames Per Second) je nešto čemu svi igrači teže, a ovaj broj najviše zavisi od performansi grafičke
+            kartice.</p>
+        </div>
+        <div class="group-modal">
+          <h3 class="title-modal-white">Ubrzajte učitavanje igara uz pomoć SSD uređaja</h3>
+          <p class="text-modal">Sporo učitavanje igara i nivoa je problem za mnoge igrače. Vreme učitavanja zavisi od
+            brzine internet konekcije, ali i od vremena potrebnog za očitavanje igre sa vašeg hard diska. Međutim, vreme
+            učitavanja možete znatno ubrzati – korišćenjem SSD (Solid-State-Drive) uređaja M.2 tipa, kod kojih brzina
+            čitanja ide i do 32 Gbps.</p>
+        </div>
+        <div class="col-12">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Nabavite odgovarajuće slušalice sa mikrofonom ili zvučnike ili koristite
+                profesionalni gejmerski audio softver</h3>
+              <p class="text-modal">Gotovo sve matične ploče poseduju audio čip, koji može biti srednje ili visoke
+                klase. Kvalitetne slušalice ili zvučnici će, u kombinaciji sa audio čipom sa matične ploče, najčešće
+                zadovoljiti vaša očekivanja, kada je kvalitet zvuka u pitanju. Dobar softver za zvučne efekte takođe
+                može poboljšati doživljaj prilikom igranja. Visokokvalitetan okružujuć zvuk će vam omogućiti da pratite
+                poziciju drugih igrača i neprijatelja, što je velika prednost u igrama.</p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_ans02_img3.jpg" alt="" class="modal-1-image-2">
+          </div>
+        </div>
+        <h3 class="text-sb-modal">Vredan savet</h3>
+        <div class="col-12">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Odaberite dobru matičnu ploču</h3>
+              <p class="text-modal">Pored toga što omogućavaju kasniju nadogradnju računara, dobre gaming matične ploče
+                nude i kraće vreme obrade audio signala, tj. obezbeđuju manje kašnjenje (latenciju), što doprinosi
+                boljem gaming iskustvu, pogotovo kod igara koje zahtevaju glasovnu komunikaciji sa saigračima.</p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_ans02_img2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="myModalSecond" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeSecond">&times;</span>
+        <h3 class="title-modal-red">KAKO DA NAPRAVITE JEDINSTVEN PC?</h3>
+        <p class="text-modal">Uz visoke performanse, mnogi korisnici računara žele i da njihov PC bude jedinstven i
+          prilagođen njihovim željama, kako u estetskom smislu tako i u pogledu dodatne opreme. Da li i vi želite
+          potpuno
+          jedinstven PC? Sledite ovih nekoliko jednostavnih koraka kako biste svoj računar učinili unikatnim.</p>
+        <h3 class="text-sb-modal">Prilagodite svoj PC svojim željama</h3>
+        <div class="group-modal">
+          <h3 class="title-modal-white">Počnite od boja</h3>
+          <p class="text-modal">Poslednjih godina, sve više proizvođača računarskih komponenti na tržište izbacuje
+            proizvode u specifičnim bojama ili u specifičnoj kombinaciji boja. Dobra polazna tačka je da sve komponente
+            vašeg računara budu iz iste serije jer će te na taj način svom računaru dati uniformisani i svedeniji
+            izgled.</p>
+        </div>
+        <div class="col-12">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Dodajte RGB osvetljenje</h3>
+              <p class="text-modal">Mnogi savremeni računari poseduju uređaje koji proizvode svetlost u RGB spektru. RGB
+                osvetljenje u svoj računar možete dodati tako što ćete ugraditi RGB LED traku ili tako što ćete odabrati
+                komponente koje već poseduju ugrađeno RGB osvetljenje. Pravilno kombinovanje i uklapanje komponenti je
+                put do dobrih i lepih svetlosnih efekata. Primera radi, određeni modeli MSI matičnih ploča dolaze sa MSI
+                Mystic Light Sync tehnologijom koja vam omogućava povezivanje RGB dodatne opreme i upravljanje RGB
+                uređajima, bez obzira na to da li se oni nalaze unutar kućišta ili izvan njega. Mystic Light Sync vam
+                donosi ogromnu paletu boja i efekata koji se jednostavno podešavaju, a vizuelni doživljaj vašeg računara
+                podižu na sasvim novi nivo.<br><br>RGB svetla uglavnom rade na naponu od 12 V, ali imajte u vidu da
+                postoje i digitalna LED svetla koja rade na naponu od 5 V. Kada govorimo o mogućnostima podešavanja
+                svetlosnih efekata, digitalna LED svetla nude primetno više opcija, nudeći korisniku mogućnost da gotovo
+                svaku sijalicu ponaosob podesi baš onako kako želi.</p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_s2-1_img1.jpg" alt="" class="modal-2-image-1">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Kako se instalira RGB uređaj</h3>
+              <p class="text-modal">1. Proverite tip igličastog konektora (hedera) na svom RGB uređaju i svojoj matičnoj
+                ploči (na primer, mogu koristiti napon od 12 V ili 5 V);<br>
+                2. Priključite 4-pinski odnosno 3-pinski RGB konektor na odgovarajući igličasti RGB konektor (heder) na
+                vašoj matičnoj ploči;<br>
+                3. Ukoliko vaša RGB oprema to zahteva, uključite i konektore za napajanje.<br>
+                • Kada povezujete ventilator, priključite konektor ventilatora na matičnu ploču<br>
+                • Kada povezujete druge RGB uređaje, priključite 4-pinske konektore na napajanje (PSU)
+              </p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_s2-1_img2.png" alt="" class="modal-2-image-2">
+          </div>
+        </div>
+        <div class="group-modal">
+          <h3 class="title-modal-white">Sistem za tečno hlađenje, napravljen po vašoj želji</h3>
+          <p class="text-modal">Sistemi za tečno hlađenje mogu biti jedinstveni, tj. posebno napravljeni prema vašim
+            željama. Kod ovakvih sistema za tečno hlađenje, korisnik samostalno bira vodene blokove koje će postaviti na
+            procesor i / ili grafičku karticu, samostalno bira rezervoar i pumpu za tečnost, samostalno bira oblik i
+            putanju cevi kroz koje će proticati rashladna tečnost… Takođe, možete upotrebiti i specijalnu boju za
+            bojenje rashladne tečnosti, čime se postiže još zanimljiviji i lepši efekat u slučaju da koristite providne
+            cevi i /ili rezervoar za rashladnu tečnost.<br><br>Ovakvi sistemi za tečno hlađenje se nazivaju Custom-Loop
+            Liquid Cooling sistemi ili Custom-Loop Water Cooling sistemi. Iako planiranje, pravljenje i ugradnja
+            Custom-Loop sistema zahtevaju dodatno znanje i veštinu, kao rezultat ćete dobiti računar koji se potpuno
+            razlikuje od svih drugih.<br><br>Pored Custom-Loop sistema za tečno hlađenje, postoje i takozvani AiO
+            (All-in-One) sistemi za tečno hlađenje. AiO sistem je zapravo fabrički napravljen sklop u čijem se sastavu
+            nalaze pumpa, radijator i cevi, a na korisniku je samo da ga postavi u kućište svog računara.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="myModalThird" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeThird">&times;</span>
+        <h3 class="title-modal-red">STREAMING PC</h3>
+        <p class="text-modal">Prenos uživo, poznat i kao Live-Streaming, je u eri interneta postao nov i nezamenjiv
+          oblik multimedije koji vam omogućava da svoje gejmerske veštine i iskustvo pokažete svojim prijateljima koji
+          su daleko od vas. Sastavljanje računara za Live-Streaming vam možda izgleda komplikovano, ali zaista nemate
+          čega da se plašite. Evo nekoliko korisnih saveta i detalja koje bi trebalo da znate pre nego što počnete.</p>
+        <h3 class="text-sb-modal">Šta treba da znate da biste sklopili STREAMING PC?</h3>
+        <div class="col-12">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Kvalitet igre i kvalitet stream-a</h3>
+              <p class="text-modal">Svaka igra ima svoje minimalne i preporučene specifikacije koje se odnose na hardver
+                kojim vaš računar treba da bude opremljen. Na osnovu svog budžeta, kao i na osnovu kvaliteta u kojem
+                želite da radite Live-Streaming, možete birati između 720p i 1080p rezolucije, a možete birati i da li
+                ćete Live-Stream emitovati u 30 ili 60 kadrova u sekundi (FPS). U najvećem broju slučajeva, ovi
+                parametri će zavisiti od vašeg procesora, memorije i grafičke kartice pa ih tako i birajte prilikom
+                kupovine.</p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_ans01_img1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-12 margin-9">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Da li je vaša veza sa internetom dovoljno brza?</h3>
+              <p class="text-modal">Uopšteno govoreći, za kvalitetan Live-Stream je potrebno da brzina vaše internet
+                konekcije, u upload smeru, iznosi oko 20 Mbps. U mnogim slučajevima, loše performanse mreže i nizak
+                kvalitet Live-Stream-a mogu biti posledica neadekvatno podešenog hardvera ili softvera, što rezultuje
+                prekomernim angažovanjem vaše mreže od strane drugih programa koje imate na svom računaru ili na
+                drugim računarima koji se nalaze u istoj mreži. Preporučujemo vam da instalirate neki od programa za
+                upravljanje mrežom ili da ostalim aplikacijama ograničite brzinu internet saobraćaja kako biste dali
+                prioritet igri i Live-Stream-u.</p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_ans01_img2.jpg" alt="">
+          </div>
+        </div>
+        <div class="group-modal">
+          <h3 class="title-modal-white">Grafičke kartice i kartice za snimanje (capture card)</h3>
+          <p class="text-modal">Pre svega, važno je da razumete zbog čega vam je potrebna kartica za snimanje
+            (capture card). Ukoliko samo želite da strimujete svoj gejmplej i ne insistirate na visokom kvalitetu i
+            maksimalnoj stabilnosti, računar iz višeg segmenta srednje klase ili snažniji, bez kartice za snimanje, će
+            biti sasvim dovoljan.<br><br>Međutim, kartica za snimanje (capture card) će smanjiti opterećenje procesora
+            računara i sprečiti zamrzavanje ili kočenje slike za vreme strimovanja. Kartica za snimanje omogućava i
+            povezivanje web kamere, kako bi vaša publika mogla da vas vidi i čuje, a sve to omogućava u Full HD 1080p
+            rezoluciji.</p>
+        </div>
+        <div class="group-modal">
+          <h3 class="title-modal-white">Odaberite procesor sa četiri ili više jezgra</h3>
+          <p class="text-modal">Odaberite snažan procesor, sa četiri ili više jezgra, koji će vašem računaru obezbediti
+            potrebne performanse. Odličan izbor su Intel Core i5, Core i7 i Core i9 procesori ili AMD Ryzen 5, Ryzen 7 i
+            Ryzen 9 procesori.</p>
+        </div>
+        <h3 class="text-sb-modal">Vredan savet</h3>
+        <div class="col-12 margin-9">
+          <div class="col-6-modal">
+            <div class="group-modal">
+              <h3 class="title-modal-white">Koristite dobar softver za strimovanje</h3>
+              <p class="text-modal">Da biste mogli da strimujete, tj. da uživo prenosite svoje gejming sesije do svojih
+                prijatelja i fanova, potrebno je da instalirate i odgovarajući softver. Dva najpopularnija programa za
+                Live-Stream su jednostavni XSplit Gamecaster i besplatni OBS.<br><br>XSplit Gamecaster je dobar izbor za
+                početnike jer se vrlo jednostavno koristi i podešava. S druge strane, OBS je besplatan program koji se
+                preporučuje iskusnijim strimerima jer nudi napredne opcije koje omogućavaju detaljno podešavanje i
+                prilagođavanje strimovanja željama korisnika.</p>
+            </div>
+          </div>
+          <div class="col-6-modal">
+            <img src="./images/p_ans02_img2.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="navThird" class="bg-7"></div>
+
+    <div class="bg-texture-3">
+      <h3 class="title-5"><span class="dash">- </span>ODABERITE KOMPONENTE ZA SVOJ PC <span class="dash">– </span></h3>
+      <p class="text">U širokoj ponudi kompanije Gigatron možete pronaći sve komponente koje su vam potrebne da biste
+        sastavili vrhunski kućni, kancelarijski ili gaming kompjuter, što će, zahvaljujući ovom vodiču, biti jednostavno
+        kao 1-2-3.<br><br>Na raspolaganju su vam proizvodi vodećih svetskih proizvođača, koje možete kupiti u svim
+        maloprodajnim objektima kompanije Gigatron ili putem naše internet prodavnice, uz isporuku na željenu adresu i
+        uz mogućnost plaćanja na rate bez kamate.</p>
+      <h5 class="text-sb margin-10">Procesori</h5>
+      <p class="text">Bez obzira na to da li će se vaš novi računar bazirati na Intel ili AMD procesoru, u Gigatronu
+        ćete pronaći sve najpopularnije i najnovije modele računarskih procesora. Pre nego što odaberete model
+        procesora, uverite se da je on kompatibilan sa matičnom pločom koju želite da ugradite u svoj računar ili koju
+        možda već imate u svom računaru.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/procesori" target="_blank"><button
+            class="button00 button3">pogledajte ponudu procesora</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Hladnjaci procesora (CPU kuleri)</h5>
+      <p class="text">Nudimo vam široku paletu vazdušnih procesorskih hladnjaka, kao i veliki broj AiO sistema za tečno
+        (vodeno) hlađenje procesora. Pre izbora hladnjaka, proverite specifikaciju vašeg kućišta kako biste se uverili
+        da će u njemu biti dovoljno mesta za hladnjak koji želite da ugradite. Takođe, uverite se da je hladnjak
+        kompatibilan sa procesorom odnosno procesorskim podnožjem (ležištem).</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/kuleri-i-oprema" target="_blank"><button
+            class="button00 button3">pogledajte ponudu kulera</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Matične ploče</h5>
+      <p class="text">Kompanija MSI je jedan od najboljih svetskih proizvođača računarskih matičnih ploča. MSI matične
+        ploče su čest izbor profesionalnih gejmera i PC entuzijasta. Ukoliko odaberete model koji je opremljen MSI
+        Mystic Light tehnologijom, uživaćete i u prelepim svetlosnim efektima. Pre nego što odaberete model matične
+        ploče, uverite se da je ona kompatibilna sa procesorom koji želite da ugradite u svoj računar ili koji možda već
+        imate u svom računaru.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/maticne-ploce?brand=!attr_brandMSI"
+          target="_blank"><button class="button00 button3">pogledajte ponudu msi matičnih ploča</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Memorije (RAM)</h5>
+      <p class="text">Kapacitet i brzina RAM-a (radne memorije) igraju veliku ulogu u sveukupnim performansama računara.
+        Preporučujemo vam da svoj računar opremite sa minimalno 8 GB memorije, u konfiguraciji 2 x 4GB. Korišćenjem dva
+        memorijska modula, umesto jednog, memorija će raditi u dvokanalnom režimu, što će se primetno i pozitivno
+        odraziti na performanse vašeg PC-a. Ukoliko ste ljubitelj RGB osvetljenja, dobra vest je da su RGB memorije
+        odavno deo Gigatronovog asortimana.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/memorije" target="_blank"><button
+            class="button00 button3">pogledajte ponudu memorija</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Grafičke kartice</h5>
+      <p class="text">Tradicionalno kvalitetne, MSI grafičke kartice se baziraju na najnovijim grafičkim procesorima
+        kompanija NVIDIA i AMD, a u ponudi su modeli među kojima ćete sigurno lako pronaći onaj koji odgovara vašim
+        potrebama, željama i budžetu. Imajte u vidu da će MSI grafička kartica sa Mystic Light RGB osvetljenjem vašem
+        računaru, pored odličnih performansi, dati i upečatljiv, gejmerski izgled. Pre odabira, u specifikaciji svog
+        kućišta proverite koja je maksimalna dužina grafičke kartice koju u njega možete ugraditi.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/graficke-karte?brand=!attr_brandMSI"
+          target="_blank"><button class="button00 button3">pogledajte ponudu msi grafičkih kartica</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Hard diskovi i SSD uređaji</h5>
+      <p class="text">SSD uređaji, pogotovo ukoliko su M.2 NVMe tipa, pružaju izuzetno velike brzine čitanja i snimanja
+        podataka. Drugim rečima, učitavanje operativnog sistema, programa, video-igara i novih nivoa u igrama će biti
+        višestruko brže nego kod tradicionalnog hard diska. Ukoliko vam je istovremeno potreban i vrlo veliki prostor za
+        skladištenje podataka, u svoj računar možete dodati i tradicionalni hard disk velikog kapaciteta, koji ćete
+        koristiti za arhiviranje.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/ssd" target="_blank"><button
+            class="button00 button3">pogledajte ponudu ssd uređaja</button></a>
+      </div>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/hard-diskovi" target="_blank"><button
+            class="button00 button3">pogledajte ponudu hard diskova</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Napajanja (PSU)</h5>
+      <p class="text">Kvalitetno napajanje, tj. napojna jedinica, će komponentama vašeg kompjutera obezbediti čist i
+        stabilan napon, što će rezultovati boljim radnim performansama i dužim životnim vekom samih komponenti. Uverite
+        se da napajanje koje želite da ugradite u svoj računar ima dovoljno snage (izraženo u vatima), kako bi vaš
+        računar ispravno funkcionisao. Ukoliko želite da unutrašnjost vašeg računara bude uredna i lepa, preporučujemo
+        vam da odaberete neki od modela modularnih napajanja, koji omogućava da sve suvišne kablove jednostavno
+        otkačite, kako ne bi pravili nered unutar računara.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/napajanja" target="_blank"><button
+            class="button00 button3">pogledajte ponudu napajanja</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Kućišta</h5>
+      <p class="text">Kućište je dom računarskim komponentama. Zato se trudite da u njemu uvek ima dovoljno mesta za ono
+        što vam je potrebno, tj. za sve komponente koje želite da ugradite u svoj računar. Ukoliko želite da istaknete
+        estetiku unutrašnjih komponenti vašeg računara, odaberite kućište sa providnom bočnom stranicom i sistemom za
+        organizovanje i smeštanje kablova, kako se ne bi videli.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/komponente/kucista" target="_blank"><button
+            class="button00 button3">pogledajte ponudu računarskih kućišta</button></a>
+      </div>
+      <h5 class="text-sb margin-10">PC periferija</h5>
+      <p class="text">Miš i tastatura su uređaji koje najviše koristimo u interakciji sa računarom. Zato ovi uređaji
+        treba da budu udobni za korišćenje i da vam njihovim funkcijama olakšaju i ubrzaju rad na računaru. Ukoliko
+        sklapate gaming kompjuter, imajte u vidu da se u žaru igre miš i tastatura koriste vrlo intenzivno i energično.
+        Ukoliko ste gejmer, preporučujemo da odabere izdržljivog gaming miša, sa brzim i preciznim senzorom pokreta, kao
+        i kvalitetnu mehaničku tastaturu. Ne zaboravite da u igrama često odlučuju milisekunde.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/oprema-za-racunare/periferije/misevi" target="_blank"><button
+            class="button00 button3">pogledajte ponudu miševa za računar</button></a>
+      </div>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/oprema-za-racunare/periferije/tastature-i-kompleti" target="_blank"><button
+            class="button00 button3">pogledajte ponudu tastatura za računar</button></a>
+      </div>
+      <h5 class="text-sb margin-10">Monitori</h5>
+      <p class="text">U ponudi kompanije Gigatron vas očekuje širok asortiman računarskih monitora, za različite namene.
+        Od kućnih i kancelarijskih monitora opremljenih tehnologijama koje čuvaju vaš vid, preko gaming monitora sa
+        visokom frekvencijom osvežavanja ekrana i brzim odzivom, pa sve do profesionalnih monitora za obradu fotografija
+        i video-montažu - sve to možete kupiti putem naše internet prodavnice ili u našim prodajnim objektima, uz
+        mogućnost plaćanja na rate bez kamate i uz dostavu na vašu adresu.</p>
+      <div class="group-button-3">
+        <a href="https://gigatron.rs/racunari-i-komponente/monitori" target="_blank"><button
+            class="button00 button3">pogledajte ponudu monitora</button></a>
+      </div>
+    </div>
+
+    <div class="group-title-end">
+      <h2 class="title-2 margin-5"><span class="dash">- </span>PITANJA I ODGOVORI<span class="dash"> -</span></h2>
+      <h5 class="text-sb margin-6">Tražite kratak i jednostavan odgovor na pitanje u vezi sklapanja računara?</h5>
+      <p class="text">Kada se upustite u avanturu sklapanja računara i počnete da učite o njima, sigurno ćete u glavi
+        imati mnogo pitanja, što je potpuno normalno i očekivano. Kako bismo vam pomogli da brzo i lako nađete odgovore,
+        napravili smo listu najčešće postavljanih pitanja i razvrstali ih u nekoliko kategorija.</p>
+    </div>
+
+    <div id="navFourth" class="bg-8"></div>
+
+    <div id="navFourth" class="bg-texture-2">
+      <h3 class="title-6"><span class="dash">- </span>RAČUNARSKI HARDVER <span class="dash">- </span></h3>
+
+      <table class="table-2">
+        <tbody class="tbody-table-2-1">
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta je procesor?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">CPU odnosno procesor je "mozak" računara. Procesor je zadužen za interpretiranje
+                računarskih instrukcija i obradu podataka koji se nalaze u računarskom softveru.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta je hladnjak (kuler) procesora?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Hladnjak računarskog procesora se sastoji od ventilatora i odvodnika toplote.
+                Hladnjak hladi procesor i na taj način sprečava pregrevanje. Pregrevanje procesora može dovesti do
+                iznenadnog automatskog isključivanja računara. Sistem za termalnu zaštitu, koji se nalazi unutar
+                procesora, na taj način sprečava kvarove i oštećenja procesora.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta je matična ploča?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Matična ploča je platforma na koju su priključene sve komponente koje se nalaze
+                unutar računara i povezuje ih međusobno. Matična ploča omogućava drugim računarskim komponentama da
+                međusobno komuniciraju i razmenjuju podatke.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta je memorija (RAM)?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">RAM (memorija ili radna memorija) se koristi za privremeno smeštanje podataka koji
+                se nalaze na hard disku i na taj način povećava brzinu kojom procesor može da pristupi podacima. Na
+                sveukupne performanse računara utiču i kapacitet i brzina memorije.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta je grafička kartica (GPU)?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Grafička kartica preuzima i obrađuje podatke iz računara te ih prikazuje na ekranu
+                monitora, u vidu teksta, slika i boja.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta su HDD i SSD i po čemu se razlikuju?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">HDD i SSD su uređaji za skladištenje podataka u računarima.<br><br>Hard disk drajv
+                (HDD): Cenovno pristupačniji i nudi veći skladišni kapacitet u odnosu na SSD, ali znatno sporiji i
+                gabaritniji.<br><br>Solid stejt drajv (SSD): Manji skladišni kapacitet, manji gabariti, nešto viša cena,
+                ali i znatno veća brzina rada.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Šta vam je potrebno da biste sastavili gaming računar?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Ovo su delovi koji su vam potrebni sa sklapanje gaming kompjutera:<br>
+                <ul>
+                  <li>Procesor (CPU)</li>
+                  <li>Matična ploča</li>
+                  <li>Grafička kartica</li>
+                  <li>Hladnjak (kuler) procesora</li>
+                  <li>Memorija (RAM)</li>
+                  <li>Uređaj za skladištenje podataka (HDD ili SSD)</li>
+                  <li>Napojna jedinica (napajanje)</li>
+                  <li>Kućište</li>
+                  <li>Periferni računarski uređaji (tastatura, miš, slušalice sa mikrofonom)</li>
+                  <li>Monitor</li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Koja je razlika između USB 3.0, USB 3.1, USB 3.2 Gen 1 i USB 3.2 Gen 2
+                priključaka?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">USB-IF organizacija za standardizaciju USB tehnologije je objavila da se USB 3.0 i
+                USB 3.1 priključci koji imaju brzinu prenosa podataka od 5 Gbps, tj. koji nose oznaku SuperSpeed, sada
+                klasifikuju i označavaju kao USB 3.2 Gen 1. Noviji, USB 3.1 priključci, koji imaju brzinu prenosa
+                podataka
+                od 10 Gbps, tj. koji nose oznaku SuperSpeed+, sada se klasifikuju i označavaju kao USB 3.2 Gen
+                2.<br><br>
+                Takođe, postoje i USB 3.2 Gen 2x2 priključci, koji nude brzinu prenosa podataka od 20 Gbps i u tehničkom
+                smislu predstavljaju udvostručene USB 3.2 Gen 2 priključke.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Koliko vati snage treba da ima vaše napajanje da bi moglo da pokreće vaš
+                računar?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Snaga, koju je vaše napajanje potrebno da ima, zavisi od hardverske konfiguracije
+                vašeg računara, tj. od komponenti koje se u njemu nalaze. Postoje onlajn kalkulatori za izračunavanje
+                snage, uz pomoć kojih ćete lako izračunati koja je snaga potrebna komponentama vašeg računara.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Kako da odaberete hladnjak (kuler) procesora?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Kada birate kuler za svoj CPU, imajte u vidu sledeće:<ol>
+                  <li>Izaberite hladnjak koji odgovara procesorskom ležištu (soketu) na vašoj matičnoj ploči.</li><br>
+                  <li>Svaki kuler podržava različit TDP (Thermal Design Power). TDP označava maksimalnu emisiju toplote
+                    sa
+                    kojom hladnjak može da se izbori. Snažniji procesori zahtevaju kvalitetnije hladnjake kako bi se
+                    obezbedio stabilan i neometan rad procesora.</li><br>
+                  <li>Izaberite kuler koji može da stane u vaše kućište. Moćni hladnjaci često imaju veoma velike
+                    odvodnike toplote pa je važno da odaberete hladnjak koji će stati u vaše kućište, a da pritom ne
+                    ugrožava nijednu drugu komponentu vašeg računara.</li>
+                </ol>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="title-6"><span class="dash">- </span>TEHNIČKA POMOĆ U SASTAVLJANJU KOMPJUTERA <span class="dash">-
+        </span></h3>
+
+      <table class="table-2">
+        <tbody class="tbody-table-2">
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Kako da sklopite PC – korak po korak?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Korak 0: Pripremite šrafciger<br>Korak 1: Postavite procesor na matičnu
+                ploču<br>Korak 2: Postavite memoriju (DIMM) na matičnu ploču<br>Korak 3: Postavite M.2 SSD uređaj na
+                matičnu ploču<br>Korak 4: Postavite hladnjak procesora<br>Korak 5: Postavite matičnu ploču u
+                kućište<br>Korak 6: Postavite grafičku karticu<br>Korak 7: Postavite uređaj za skladištenje
+                podataka<br>Korak 8: Postavite napajanje (napojnu jedinicu)<br>Korak 9: Povežite prednji panel<br>Korak
+                10: Organizujte kablove<br>Korak 11: Instalirajte operativni sistem i drajvere</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Kako da postavite ili promenite RAM (memoriju)?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">Da instalirate memoriju na svoju matičnu ploču, uradite sledeće:<br>
+                <ol>
+                  <li>Stisnite tj. oborite nadole osigurače (jezičke) koji se nalaze na krajevima ležišta za memoriju
+                    kako biste ležišta pripremili za instalaciju memorijskih modula;</li><br>
+                  <li>U uputstvu za vašu matičnu ploču pronađite informacije o redosledu instalacije memorijskih modula.
+                    U slučaju da koristite samo jedan ili dva memorijska modula, odnosno ukoliko nećete popuniti sva
+                    ležišta za memoriju, proverite koja ležišta je preporučeno da koristite;</li><br>
+                  <li>Ravno ubacite memorijski modul u ležište i stisnite ga nadole. Kada čujete „klik“, odnosno kada se
+                    osigurači (jezičci) vrate u gornji položaj, to je znak da je memorijski modul zaključan, čime je
+                    njegova instalacija završena.</li>
+                </ol>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-white">
+              <p class="subtitle-table-2">Kako da instalirate RGB uređaje?</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-table-2-red">
+              <p class="text-table-2">
+                <ol>
+                  <li>Proverite tip igličastog konektora (hedera) na svom RGB uređaju i svojoj matičnoj ploči (na
+                    primer, mogu koristiti napon od 12 V ili 5 V);</li><br>
+                  <li>Priključite 4-pinski odnosno 3-pinski RGB konektor na odgovarajući igličasti RGB konektor (heder)
+                    na vašoj matičnoj ploči;</li><br>
+                  <li>Ukoliko vaša RGB oprema to zahteva, uključite i konektore za napajanje.</li>
+                </ol>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="disclaimer">* Samostalno sklapanje računara obavljate na sopstvenu odgovornost. Kompanije Gigatron i MSI
+        neće snositi nikakvu krivičnu ili materijalnu odgovornost ukoliko nestručnim rukovanjem delimično ili trajno
+        oštetite računarske komponente ili alat, odnosno ukoliko nestručnim rukovanjem izazovete incident bilo koje
+        vrste.</p>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
