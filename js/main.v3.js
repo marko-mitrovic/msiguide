@@ -381,12 +381,18 @@ z.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.querySelector("#myModalFirst").style.display = 'none';
+    document.querySelector("body").style.overflow = 'visible';
   }
   if (event.target == modaldrugi) {
     modaldrugi.style.display = "none";
+    document.querySelector("#myModalFirst").style.display = 'none';
+    document.querySelector("body").style.overflow = 'visible';
   }
   if (event.target == modaltreci) {
     modaltreci.style.display = "none";
+    document.querySelector("#myModalFirst").style.display = 'none';
+    document.querySelector("body").style.overflow = 'visible';
   }
 }
 
