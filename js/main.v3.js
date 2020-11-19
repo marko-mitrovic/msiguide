@@ -389,3 +389,39 @@ window.onclick = function (event) {
     modaltreci.style.display = "none";
   }
 }
+
+/* when modal is opened */
+document.querySelector("#myBtnFirst").addEventListener('click', function() {
+  document.querySelector("#myModalFirst").style.display = 'block';
+  document.querySelector("body").style.overflow = 'hidden';
+});
+
+/* when modal is closed */
+document.querySelector("#closeFirst").addEventListener('click', function() {
+  document.querySelector("#myModalFirst").style.display = 'none';
+  document.querySelector("body").style.overflow = 'visible';
+});
+
+/* when modal is opened */
+document.querySelector("#myBtnSecond").addEventListener('click', function() {
+  document.querySelector("#myModalSecond").style.display = 'block';
+  document.querySelector("body").style.overflow = 'hidden';
+});
+
+/* when modal is closed */
+document.querySelector("#closeSecond").addEventListener('click', function() {
+  document.querySelector("#myModalSecond").style.display = 'none';
+  document.querySelector("body").style.overflow = 'visible';
+});
+
+/* when modal is opened */
+document.querySelector("#myBtnThird").addEventListener('click', function() {
+  document.querySelector("#myModalThird").style.display = 'block';
+  document.querySelector("body").style.overflow = 'hidden';
+});
+
+/* when modal is closed */
+document.querySelector("#closeThird").addEventListener('click', function() {
+  document.querySelector("#myModalThird").style.display = 'none';
+  document.querySelector("body").style.overflow = 'visible';
+});
