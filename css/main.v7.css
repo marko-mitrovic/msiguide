@@ -553,8 +553,6 @@ ol {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 36.5vh;
-  /*padding-top: 100px;*/
   left: 0;
   top: 0;
   width: 100%;
@@ -572,8 +570,7 @@ ol {
 /* Modal Content */
 .modal-content {
   background-color: #000000cc;
-  margin: auto;
-  /*margin: 17%;*/
+  margin: 42px auto 42px;
   padding: 20px;
   border: #323232 1px solid;
   border-radius: 10px;
