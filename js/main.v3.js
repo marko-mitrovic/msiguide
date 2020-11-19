@@ -1,23 +1,3 @@
-function navFirst() {
-  var elmnt = document.getElementById("navFirst");
-  elmnt.scrollIntoView();
-}
-
-function navSecond() {
-  var elmnt = document.getElementById("navSecond");
-  elmnt.scrollIntoView();
-}
-
-function navThird() {
-  var elmnt = document.getElementById("navThird");
-  elmnt.scrollIntoView();
-}
-
-function navFourth() {
-  var elmnt = document.getElementById("navFourth");
-  elmnt.scrollIntoView();
-}
-
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
